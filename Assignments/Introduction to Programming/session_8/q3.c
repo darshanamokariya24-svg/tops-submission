@@ -12,8 +12,9 @@ void increaseFollowersByReference(int *followers)
 }
 int main()
 {
-	int followers = 5000;
-
+	int followers;
+	printf("Enter Followers:");
+	scanf("%d",&followers);
 	printf("Original followers: %d\n", followers);
 	
 	increaseFollowersByValue(followers);

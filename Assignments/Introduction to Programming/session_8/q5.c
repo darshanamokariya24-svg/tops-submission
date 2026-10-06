@@ -3,7 +3,12 @@
 
 void capitalize(char str[])
 {
+	int i;
     str[0] = toupper(str[0]);
+    for(i = 1; str[i] != '\0'; i++)
+    {
+        str[i] = tolower(str[i]);
+    }
 }
 
 int main()

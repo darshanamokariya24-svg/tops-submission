@@ -1,8 +1,15 @@
 #include<stdio.h>
 void formatPrice(int price)
 {
-	printf("$%d\n", price);
-} 
+    if (price >= 1000)
+    {
+        printf("\n$%d,%03d", price / 1000, price % 1000);
+    }
+    else
+    {
+        printf("\n$%d", price);
+    }
+}
 int main()
 {
 	int p1,p2,p3;
